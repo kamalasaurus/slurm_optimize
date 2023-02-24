@@ -12,4 +12,4 @@
 module purge
 module load nextflow/20.10.0
 
-nextflow run main.nf -c /scratch/hm2840/slurm_optimize/nextflow.config
+nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config

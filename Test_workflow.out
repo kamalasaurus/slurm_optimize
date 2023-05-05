@@ -1,0 +1,960 @@
+N E X T F L O W  ~  version 20.10.0
+Launching `main.nf` [voluminous_euclid] - revision: 7dec783b3c
+reads: /scratch/cgsb/bergelson/plant-genomes/CompRgeneEvolution/WGS_sequencing_Athaliana_Chirsuta_2022-08-15_HNCMMDSX3/merged/HNCMMDSX3_n0{1,2}_Bchi_095.fastq.gz
+ref: /scratch/work/cgsb/genomes/Public/Plant/Arabidopsis_thaliana/NCBI/TAIR10/GCF_000001735.3_TAIR10_genomic.fna
+output: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/out
+gatk temp dir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/gatk_temp
+snpeff db: Arabidopsis_thaliana
+snpeff data: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/snpeff_data
+[-        ] process > trim                -
+[-        ] process > align               -
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+
+executor >  slurm (1)
+[6b/4e8db2] process > trim (1)            [  0%] 0 of 1
+[-        ] process > align               -
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+[-        ] process > bqsr                -
+[-        ] process > analyzeCovariates   -
+[-        ] process > make_bw             -
+[-        ] process > snpEff              -
+[-        ] process > bzip_tabix_vcf      -
+[-        ] process > qc                  -
+[-        ] process > bcftools_stats      -
+[-        ] process > multiqc             -
+
+executor >  slurm (1)
+[6b/4e8db2] process > trim (1)            [  0%] 0 of 1
+[-        ] process > align               -
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+[-        ] process > bqsr                -
+[-        ] process > analyzeCovariates   -
+[-        ] process > make_bw             -
+[-        ] process > snpEff              -
+[-        ] process > bzip_tabix_vcf      -
+[-        ] process > qc                  -
+[-        ] process > bcftools_stats      -
+[-        ] process > multiqc             -
+
+executor >  slurm (1)
+[6b/4e8db2] process > trim (1)            [100%] 1 of 1 ✔
+[-        ] process > align               -
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+[-        ] process > bqsr                -
+[-        ] process > analyzeCovariates   -
+[-        ] process > make_bw             -
+[-        ] process > snpEff              -
+[-        ] process > bzip_tabix_vcf      -
+[-        ] process > qc                  -
+[-        ] process > bcftools_stats      -
+[-        ] process > multiqc             -
+
+executor >  slurm (2)
+[6b/4e8db2] process > trim (1)            [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)           [  0%] 0 of 1
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+[-        ] process > bqsr                -
+[-        ] process > analyzeCovariates   -
+[-        ] process > make_bw             -
+[-        ] process > snpEff              -
+[-        ] process > bzip_tabix_vcf      -
+[-        ] process > qc                  -
+[-        ] process > bcftools_stats      -
+[-        ] process > multiqc             -
+
+executor >  slurm (2)
+[6b/4e8db2] process > trim (1)            [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)           [  0%] 0 of 1
+[-        ] process > markDuplicatesSpark -
+[-        ] process > downsample_bam      -
+[-        ] process > qualimap            -
+[-        ] process > getMetrics          -
+[-        ] process > haplotypeCaller     -
+[-        ] process > selectVariants      -
+[-        ] process > filterSnps          -
+[-        ] process > filterIndels        -
+[-        ] process > bqsr                -
+[-        ] process > analyzeCovariates   -
+[-        ] process > make_bw             -
+[-        ] process > snpEff              -
+[-        ] process > bzip_tabix_vcf      -
+[-        ] process > qc                  -
+[-        ] process > bcftools_stats      -
+[-        ] process > multiqc             -
+
+executor >  slurm (3)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [  0%] 0 of 1
+[-        ] process > downsample_bam          -
+[-        ] process > qualimap                -
+[-        ] process > getMetrics              -
+[-        ] process > haplotypeCaller         -
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[-        ] process > make_bw                 -
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (3)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [  0%] 0 of 1
+[-        ] process > downsample_bam          -
+[-        ] process > qualimap                -
+[-        ] process > getMetrics              -
+[-        ] process > haplotypeCaller         -
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[-        ] process > make_bw                 -
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (3)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[-        ] process > qualimap                [  0%] 0 of 1
+[-        ] process > getMetrics              [  0%] 0 of 1
+[-        ] process > haplotypeCaller         -
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[-        ] process > make_bw                 [  0%] 0 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (7)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [  0%] 0 of 1
+[21/d465b1] process > getMetrics (1)          [  0%] 0 of 1
+[0a/970b52] process > haplotypeCaller (1)     [  0%] 0 of 1
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [  0%] 0 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (7)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [  0%] 0 of 1
+[21/d465b1] process > getMetrics (1)          [  0%] 0 of 1
+[0a/970b52] process > haplotypeCaller (1)     [  0%] 0 of 1
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [  0%] 0 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (7)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [  0%] 0 of 1
+[21/d465b1] process > getMetrics (1)          [  0%] 0 of 1
+[0a/970b52] process > haplotypeCaller (1)     [  0%] 0 of 1
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (7)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [  0%] 0 of 1
+[0a/970b52] process > haplotypeCaller (1)     [  0%] 0 of 1
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (7)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[0a/970b52] process > haplotypeCaller (1)     [  0%] 0 of 1
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (8)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[0a/970b52] process > haplotypeCaller (1)     [ 50%] 1 of 2, failed: 1, retri...
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+[0a/970b52] NOTE: Process `haplotypeCaller (1)` terminated with an error exit status (247) -- Execution is retried (1)
+
+executor >  slurm (8)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [ 50%] 1 of 2, failed: 1, retri...
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+[0a/970b52] NOTE: Process `haplotypeCaller (1)` terminated with an error exit status (247) -- Execution is retried (1)
+
+executor >  slurm (8)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [ 50%] 1 of 2, failed: 1, retri...
+[-        ] process > selectVariants          -
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+
+executor >  slurm (9)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [  0%] 0 of 1
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+
+executor >  slurm (9)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [  0%] 0 of 1
+[-        ] process > filterSnps              -
+[-        ] process > filterIndels            -
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (11)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [  0%] 0 of 1
+[2e/5b25a1] process > filterIndels (1)        [  0%] 0 of 1
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (11)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [  0%] 0 of 1
+[2e/5b25a1] process > filterIndels (1)        [  0%] 0 of 1
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (11)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [  0%] 0 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[-        ] process > bqsr                    -
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (11)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[-        ] process > bqsr                    [  0%] 0 of 1
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (12)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [  0%] 0 of 1
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (12)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[21/6b2371] process > haplotypeCaller (1)     [100%] 2 of 2, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [  0%] 0 of 1
+[-        ] process > analyzeCovariates       -
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (14)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[db/3626d9] process > haplotypeCaller (2)     [ 67%] 2 of 3, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [  0%] 0 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (14)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[db/3626d9] process > haplotypeCaller (2)     [ 67%] 2 of 3, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [  0%] 0 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (14)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[db/3626d9] process > haplotypeCaller (2)     [ 67%] 2 of 3, failed: 1, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (15)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [ 75%] 3 of 4, failed: 2, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+[db/3626d9] NOTE: Process `haplotypeCaller (2)` terminated with an error exit status (247) -- Execution is retried (1)
+
+executor >  slurm (15)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [ 75%] 3 of 4, failed: 2, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+
+executor >  slurm (15)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[d4/dbc801] process > selectVariants (1)      [100%] 1 of 1
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[f1/d9e91c] process > make_bw (1)             [100%] 1 of 1
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+
+executor >  slurm (17)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [ 50%] 1 of 2
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [ 50%] 1 of 2
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (17)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [ 50%] 1 of 2
+[6e/ad85df] process > filterSnps (1)          [100%] 1 of 1
+[2e/5b25a1] process > filterIndels (1)        [100%] 1 of 1
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [ 50%] 1 of 2
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (19)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [ 50%] 1 of 2
+[a1/7c5fc7] process > filterIndels (2)        [ 50%] 1 of 2
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [ 50%] 1 of 2
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (19)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [ 50%] 1 of 2
+[a1/7c5fc7] process > filterIndels (2)        [ 50%] 1 of 2
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (19)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [ 50%] 1 of 2
+[a1/7c5fc7] process > filterIndels (2)        [ 50%] 1 of 2
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[-        ] process > snpEff                  -
+[-        ] process > bzip_tabix_vcf          -
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (20)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [ 50%] 1 of 2
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[-        ] process > snpEff                  -
+[c0/70afd1] process > bzip_tabix_vcf (2)      [  0%] 0 of 1
+[-        ] process > qc                      -
+[-        ] process > bcftools_stats          -
+[-        ] process > multiqc                 -
+
+executor >  slurm (23)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [  0%] 0 of 1
+[01/b452c7] process > qc (1)                  [  0%] 0 of 1
+[3c/f24ae1] process > bcftools_stats (1)      [  0%] 0 of 1
+[-        ] process > multiqc                 -
+
+executor >  slurm (23)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [  0%] 0 of 1
+[01/b452c7] process > qc (1)                  [  0%] 0 of 1
+[3c/f24ae1] process > bcftools_stats (1)      [  0%] 0 of 1
+[-        ] process > multiqc                 -
+
+executor >  slurm (24)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1
+[20/d30873] process > qc (1)                  [ 50%] 1 of 2, failed: 1, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+[01/b452c7] NOTE: Process `qc (1)` terminated with an error exit status (127) -- Execution is retried (1)
+
+executor >  slurm (24)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1
+[20/d30873] process > qc (1)                  [ 67%] 2 of 3, failed: 2, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+[20/d30873] NOTE: Process `qc (1)` terminated with an error exit status (127) -- Execution is retried (2)
+
+
+executor >  slurm (25)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1
+[21/f759fc] process > qc (1)                  [ 67%] 2 of 3, failed: 2, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+[20/d30873] NOTE: Process `qc (1)` terminated with an error exit status (127) -- Execution is retried (2)
+
+
+executor >  slurm (26)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1
+[71/abccf9] process > qc (1)                  [ 75%] 3 of 4, failed: 3, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+[21/f759fc] NOTE: Process `qc (1)` terminated with an error exit status (127) -- Execution is retried (3)
+
+
+executor >  slurm (26)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[47/1f027d] process > snpEff (1)              [  0%] 0 of 1
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1
+[71/abccf9] process > qc (1)                  [ 75%] 3 of 4, failed: 3, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+
+Error executing process > 'qc (1)'
+
+Caused by:
+  Process `qc (1)` terminated with an error exit status (127)
+
+Command executed:
+
+  parse_metrics.sh Bchi_095 > Bchi_095_report.csv
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: parse_metrics.sh: command not found
+
+Work dir:
+  /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/71/abccf9ce812cda2b509ea737bc7245
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+WARN: Killing pending tasks (1)
+
+executor >  slurm (26)
+[6b/4e8db2] process > trim (1)                [100%] 1 of 1 ✔
+[78/e66ee6] process > align (1)               [100%] 1 of 1 ✔
+[73/95d5c2] process > markDuplicatesSpark (1) [100%] 1 of 1 ✔
+[-        ] process > downsample_bam          -
+[06/314e48] process > qualimap (1)            [100%] 1 of 1 ✔
+[21/d465b1] process > getMetrics (1)          [100%] 1 of 1 ✔
+[ee/664892] process > haplotypeCaller (2)     [100%] 4 of 4, failed: 2, retri...
+[39/66178b] process > selectVariants (2)      [100%] 2 of 2 ✔
+[3d/dd2aea] process > filterSnps (2)          [100%] 2 of 2 ✔
+[a1/7c5fc7] process > filterIndels (2)        [100%] 2 of 2 ✔
+[08/51a8cd] process > bqsr (1)                [100%] 1 of 1 ✔
+[6d/327117] process > analyzeCovariates (1)   [100%] 1 of 1 ✔
+[fe/16cfcc] process > make_bw (3)             [100%] 2 of 2 ✔
+[-        ] process > snpEff (1)              -
+[c0/70afd1] process > bzip_tabix_vcf (2)      [100%] 1 of 1 ✔
+[71/abccf9] process > qc (1)                  [100%] 4 of 4, failed: 4, retri...
+[3c/f24ae1] process > bcftools_stats (1)      [100%] 1 of 1 ✔
+[-        ] process > multiqc                 -
+Error executing process > 'qc (1)'
+
+Caused by:
+  Process `qc (1)` terminated with an error exit status (127)
+
+Command executed:
+
+  parse_metrics.sh Bchi_095 > Bchi_095_report.csv
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: parse_metrics.sh: command not found
+
+Work dir:
+  /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/71/abccf9ce812cda2b509ea737bc7245
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+

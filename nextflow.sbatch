@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=2
-#SBATCH --time=05:00:00
+#SBATCH --time=40:00:00
 #SBATCH --mem=2GB
 #SBATCH --output=Test_workflow.out
 #SBATCH --error=Test_workflow.err

@@ -1,0 +1,217 @@
+Mar-20 15:41:46.064 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+Mar-20 15:41:46.207 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Mar-20 15:41:46.243 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [voluminous_hopper] - revision: 7dec783b3c
+Mar-20 15:41:46.271 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /scratch/kr3059/slurm_optimize/nextflow.config
+Mar-20 15:41:46.274 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /scratch/kr3059/slurm_optimize/nextflow.config
+Mar-20 15:41:46.274 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/kr3059/slurm_optimize/nextflow.config
+Mar-20 15:41:46.274 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/kr3059/slurm_optimize/nextflow.config
+Mar-20 15:41:46.303 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-20 15:41:47.260 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-20 15:41:47.317 [main] DEBUG nextflow.Session - Session uuid: 5b269375-3dd1-4760-bcc9-fa2683680497
+Mar-20 15:41:47.317 [main] DEBUG nextflow.Session - Run name: voluminous_hopper
+Mar-20 15:41:47.317 [main] DEBUG nextflow.Session - Executor pool size: 2
+Mar-20 15:41:47.338 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (10:14 EDT)
+  System: Linux 4.18.0-372.26.1.el8_6.x86_64
+  Runtime: Groovy 3.0.5 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_271-b09
+  Encoding: UTF-8 (UTF-8)
+  Process: 86334@cs427.hpc.nyu.edu [10.32.34.171]
+  CPUs: 2 - Mem: 2 GB (1.6 GB) - Swap: 0 (0)
+Mar-20 15:41:47.379 [main] DEBUG nextflow.Session - Work-dir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir [gpfs]
+Mar-20 15:41:47.380 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch/kr3059/slurm_optimize/bin
+Mar-20 15:41:47.425 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-20 15:41:47.426 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-20 15:41:47.656 [main] DEBUG nextflow.Session - Session start invoked
+Mar-20 15:41:48.811 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-20 15:41:48.818 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: bqsr, analyzeCovariates, downsample_bam, bcftools_stats, qualimap, make_bw, getMetrics, align, selectVariants, haplotypeCaller, bzip_tabix_vcf, snpEff, qc, trim, markDuplicatesSpark, filterIndels, filterSnps, multiqc
+Mar-20 15:41:48.873 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /scratch/cgsb/bergelson/plant-genomes/CompRgeneEvolution/WGS_sequencing_Athaliana_Chirsuta_2022-08-15_HNCMMDSX3/merged/; pattern: HNCMMDSX3_n0{1,2}_Bchi_095.fastq.gz; options: [:]
+Mar-20 15:41:49.014 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.014 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.024 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Mar-20 15:41:49.029 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Mar-20 15:41:49.036 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Mar-20 15:41:49.101 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.101 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.107 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:markDuplicatesSpark` matches process markDuplicatesSpark
+Mar-20 15:41:49.112 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.143 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.154 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.154 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.159 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.159 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.165 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.166 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.197 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.198 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.203 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.203 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.210 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.210 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.215 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.215 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.248 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.248 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.253 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.253 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.258 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.258 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.262 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.262 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.276 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.276 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.318 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.318 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.333 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Mar-20 15:41:49.333 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Mar-20 15:41:49.540 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-20 15:41:49.540 [main] DEBUG nextflow.Session - Session await
+Mar-20 15:41:49.598 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process trim (1) > jobId: 31193343; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/d2/a233b3cb2eae12e1b031c03bf27aa8
+Mar-20 15:41:49.601 [Task submitter] INFO  nextflow.Session - [d2/a233b3] Submitted process > trim (1)
+Mar-20 15:46:54.047 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193343; id: 1; name: trim (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/d2/a233b3cb2eae12e1b031c03bf27aa8 started: 1679341364045; exited: -; ]
+Mar-20 15:51:54.052 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193343; id: 1; name: trim (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/d2/a233b3cb2eae12e1b031c03bf27aa8 started: 1679341364045; exited: -; ]
+Mar-20 15:56:54.062 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193343; id: 1; name: trim (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/d2/a233b3cb2eae12e1b031c03bf27aa8 started: 1679341364045; exited: -; ]
+Mar-20 16:01:09.071 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31193343; id: 1; name: trim (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/d2/a233b3cb2eae12e1b031c03bf27aa8 started: 1679341364045; exited: 2023-03-20T20:01:04Z; ]
+Mar-20 16:01:09.117 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=6; maxQueueSize=18; keepAlive=1m
+Mar-20 16:01:09.161 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process align (1) > jobId: 31193636; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500
+Mar-20 16:01:09.161 [Task submitter] INFO  nextflow.Session - [2a/381a97] Submitted process > align (1)
+Mar-20 16:01:54.071 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: SUBMITTED; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: -; exited: -; ]
+Mar-20 16:06:54.080 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: -; ]
+Mar-20 16:11:54.087 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: -; ]
+Mar-20 16:16:54.092 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: -; ]
+Mar-20 16:21:54.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: -; ]
+Mar-20 16:26:54.104 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31193636; id: 2; name: align (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: -; ]
+Mar-20 16:30:54.112 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31193636; id: 2; name: align (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/2a/381a97aaa1bbb524750a7b7cef6500 started: 1679342514072; exited: 2023-03-20T20:30:49Z; ]
+Mar-20 16:30:54.168 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process markDuplicatesSpark (1) > jobId: 31194199; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/e4/24b7dd0b65b8f36b20a569a45f3e95
+Mar-20 16:30:54.169 [Task submitter] INFO  nextflow.Session - [e4/24b7dd] Submitted process > markDuplicatesSpark (1)
+Mar-20 16:31:54.110 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194199; id: 3; name: markDuplicatesSpark (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/e4/24b7dd0b65b8f36b20a569a45f3e95 started: 1679344274112; exited: -; ]
+Mar-20 16:36:54.115 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194199; id: 3; name: markDuplicatesSpark (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/e4/24b7dd0b65b8f36b20a569a45f3e95 started: 1679344274112; exited: -; ]
+Mar-20 16:41:04.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31194199; id: 3; name: markDuplicatesSpark (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/e4/24b7dd0b65b8f36b20a569a45f3e95 started: 1679344274112; exited: 2023-03-20T20:41:02Z; ]
+Mar-20 16:41:04.532 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process getMetrics (1) > jobId: 31194279; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/78/d6a92be5094d1dacdb3f53a58daea9
+Mar-20 16:41:04.532 [Task submitter] INFO  nextflow.Session - [78/d6a92b] Submitted process > getMetrics (1)
+Mar-20 16:41:04.574 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process haplotypeCaller (1) > jobId: 31194280; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/dd/27eab01b73fdb97c2dbeffec50c8db
+Mar-20 16:41:04.575 [Task submitter] INFO  nextflow.Session - [dd/27eab0] Submitted process > haplotypeCaller (1)
+Mar-20 16:41:04.617 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process qualimap (1) > jobId: 31194281; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/15/2a3552f6ba547cc17bf398465856ee
+Mar-20 16:41:04.617 [Task submitter] INFO  nextflow.Session - [15/2a3552] Submitted process > qualimap (1)
+Mar-20 16:41:04.644 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process make_bw (1) > jobId: 31194282; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3c/0f4746da2cc6613cb894a676fb938e
+Mar-20 16:41:04.645 [Task submitter] INFO  nextflow.Session - [3c/0f4746] Submitted process > make_bw (1)
+Mar-20 16:41:54.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194279; id: 4; name: getMetrics (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/78/d6a92be5094d1dacdb3f53a58daea9 started: 1679344884125; exited: -; ]
+~> TaskHandler[jobId: 31194280; id: 5; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/dd/27eab01b73fdb97c2dbeffec50c8db started: 1679344884129; exited: -; ]
+~> TaskHandler[jobId: 31194281; id: 6; name: qualimap (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/15/2a3552f6ba547cc17bf398465856ee started: 1679344884133; exited: -; ]
+~> TaskHandler[jobId: 31194282; id: 8; name: make_bw (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3c/0f4746da2cc6613cb894a676fb938e started: 1679344884135; exited: -; ]
+Mar-20 16:43:14.129 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31194282; id: 8; name: make_bw (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3c/0f4746da2cc6613cb894a676fb938e started: 1679344884135; exited: 2023-03-20T20:43:10Z; ]
+Mar-20 16:44:14.129 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31194280; id: 5; name: haplotypeCaller (1); status: COMPLETED; exit: 247; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/dd/27eab01b73fdb97c2dbeffec50c8db started: 1679344884129; exited: 2023-03-20T20:44:13Z; ]
+Mar-20 16:44:14.139 [Task monitor] INFO  nextflow.processor.TaskProcessor - [dd/27eab0] NOTE: Process `haplotypeCaller (1)` terminated with an error exit status (247) -- Execution is retried (1)
+Mar-20 16:44:14.203 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process haplotypeCaller (1) > jobId: 31194289; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e
+Mar-20 16:44:14.203 [Task submitter] INFO  nextflow.Session - [3a/0769b4] Re-submitted process > haplotypeCaller (1)
+Mar-20 16:46:19.131 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31194281; id: 6; name: qualimap (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/15/2a3552f6ba547cc17bf398465856ee started: 1679344884133; exited: 2023-03-20T20:46:16Z; ]
+Mar-20 16:46:54.128 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 2 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194279; id: 4; name: getMetrics (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/78/d6a92be5094d1dacdb3f53a58daea9 started: 1679344884125; exited: -; ]
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 16:50:34.135 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 31194279; id: 4; name: getMetrics (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/78/d6a92be5094d1dacdb3f53a58daea9 started: 1679344884125; exited: 2023-03-20T20:50:34Z; ]
+Mar-20 16:51:54.135 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 16:56:54.141 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:01:54.147 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:06:54.154 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:11:54.158 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:16:54.164 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:21:54.168 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:26:54.175 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:31:54.181 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:36:54.186 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:41:54.191 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:46:54.195 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:51:54.201 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 17:56:54.208 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:01:54.214 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:06:54.220 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:11:54.226 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:16:54.230 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:21:54.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:26:54.242 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:31:54.248 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:36:54.269 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:41:54.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:46:54.280 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:51:54.286 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 18:56:54.302 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:01:54.304 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:06:54.309 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:11:54.315 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:16:54.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:21:54.335 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:26:54.342 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:31:54.348 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:36:54.351 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:41:54.363 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:46:54.384 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:51:59.385 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 19:56:59.390 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:01:59.397 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:06:59.402 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:11:59.410 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:16:59.416 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:21:59.421 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:26:59.427 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:31:59.432 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]
+Mar-20 20:36:59.456 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 31194289; id: 9; name: haplotypeCaller (1); status: RUNNING; exit: -; error: -; workDir: /scratch/kr3059/SeqData_analysis_nextflow/gatk4/nextflow_work_dir/3a/0769b476a0b0ea1ad3b723b3eadb6e started: 1679345064130; exited: -; ]

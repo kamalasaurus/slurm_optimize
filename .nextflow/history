@@ -1,0 +1,7 @@
+2023-02-24 13:39:16	3.3s	gigantic_allen	ERR	7dec783b3ca40f4b455eb9dc6915e6ff	8ece82e0-7b70-4c3b-ab22-a57ab6320d6e	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-02-24 13:45:16	3.4s	marvelous_heisenberg	ERR	7dec783b3ca40f4b455eb9dc6915e6ff	d32f76ca-67e3-41df-87cb-0dae6f7888b4	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-02-24 13:48:16	-	exotic_mcclintock	-	7dec783b3ca40f4b455eb9dc6915e6ff	4b07b690-8698-4ff9-b99d-ea9d9484eaa1	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-03-20 15:41:47	-	voluminous_hopper	-	7dec783b3ca40f4b455eb9dc6915e6ff	5b269375-3dd1-4760-bcc9-fa2683680497	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-03-21 17:03:36	-	cheesy_shirley	-	7dec783b3ca40f4b455eb9dc6915e6ff	7e99b47e-8971-41c1-ad43-7c0fefb65928	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-03-22 14:09:32	-	curious_volhard	-	7dec783b3ca40f4b455eb9dc6915e6ff	f3853309-73cb-4e20-a19d-dd363fa3c8eb	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
+2023-03-22 14:36:31	1d 1h 59m 16s	voluminous_euclid	ERR	7dec783b3ca40f4b455eb9dc6915e6ff	cadae17f-a0cd-4c31-a3d5-575791117d94	nextflow run main.nf -c /scratch/kr3059/slurm_optimize/nextflow.config
